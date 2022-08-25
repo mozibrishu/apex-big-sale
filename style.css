@@ -1,11 +1,70 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
+    overflow: hidden;
 }
 
-.container{
+#container {
+    position: relative;
     width: 300px;
     height: 250px;
     background-color: antiquewhite;
-    background-image: url(images/bg1.png);
+    overflow: hidden;
+}
+#bg{
+    width: 300px;
+    height: 250px;
+}
+#envlopTop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#cap {
+    position: absolute;
+    top: 62px;
+    left: -6px;
+    width: 321px;
+    height: 76px;
+    z-index: 3;
+    transition: transform 1s;
+}
+
+.transformActive {
+    transform: rotatex(180deg);
+    transform-origin: top;
+}
+
+#slide2{
+    height: 150px;
+    width: 200px;
+    z-index: 1;
+    position: absolute;
+    top: 75px;
+    left: 55px;
+}
+
+.translateUpper{
+    transform: translateY(-50px);
+    transition: transform 500ms;
+}
+
+.slide2Main{
+    height: 250px !important;
+    width: 300px !important;
+    top: 0px !important;
+    left: 0px !important;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+.envlopTopHidden{
+    top: 250px !important;
+    transition: all 500ms;
+}
+
+.hide{
+    display: none;
 }
