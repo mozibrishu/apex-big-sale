@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    width: 300px;
+    height: 250px;
+    background-color: antiquewhite;
+    background-image: url(images/bg1.png);
+}
