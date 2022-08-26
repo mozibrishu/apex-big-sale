@@ -1,5 +1,6 @@
 function envelopOpen(){
     document.getElementById('cap').classList.add('transformActive');
+    document.getElementById('tapicon').classList.add('hidden');
     document.getElementById('bg2').classList.add('translateUpperBg2');
     setTimeout(addBg,800);
     setTimeout(slideOpen,1200);
