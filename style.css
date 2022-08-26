@@ -18,6 +18,7 @@
     top: 0;
     left: 0;
 }
+
 .bg2 {
     width: 300px;
     height: 250px;
@@ -40,9 +41,32 @@
     z-index: 3;
 }
 
+.tapicon {
+    position: absolute;
+    top: 205px;
+    left: 245px;
+    z-index: 4;
+    animation: tapIcon 1s ease-in-out alternate infinite;
+}
+
+@keyframes tapIcon {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .transformActive {
-    transform: rotatex(180deg);
-    transform-origin: 0px 17px;;
+    transform: rotateX(180deg);
+    transform-origin: 0px 17px;
+    ;
     transition: transform 1s;
 }
 
@@ -59,6 +83,7 @@
     transform: translateY(-50px);
     transition: transform 500ms;
 }
+
 .translateUpperBg2 {
     top: 0px;
     transition: all 800ms;
@@ -82,7 +107,7 @@
     display: none;
 }
 
-.opacityZero{
+.opacityZero {
     opacity: 0;
     transition: opacity 500ms;
 }
