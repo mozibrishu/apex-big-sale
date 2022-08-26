@@ -1,24 +1,23 @@
 function envelopOpen(){
     document.getElementById('cap').classList.add('transformActive');
-    setTimeout(addBg,900);
+    document.getElementById('bg2').classList.add('translateUpperBg2');
+    setTimeout(addBg,800);
     setTimeout(slideOpen,1200);
-    // setTimeout(mainSlide,3000);
 }
 
 function addBg(){
-    document.getElementById("bg").src = "images/bg2.png";
-    document.getElementById('cap').style.zIndex= '-1';
+    document.getElementById('cap').classList.add('opacityZero');
+    document.getElementById('bg1').classList.add('opacityZero');
 }
 
 
 function slideOpen(){
     document.getElementById('slide2').classList.add('translateUpper');
-    
     setTimeout(mainSlide,1000);
-    document.getElementById('envlopTop').classList.add('envlopTopHidden');
-    document.getElementById('bg').classList.add('envlopTopHidden');
 }
 
 function mainSlide(){
     document.getElementById('slide2').classList.add('slide2Main');
+    document.getElementById('envelopTop').classList.add('envelopTopHidden');
+    document.getElementById('bg2').classList.add('envelopTopHidden');
 }
